@@ -1,0 +1,29 @@
+[2026-04-12T10:55:08Z] === ENRICH ITERATION 1 START | repo=ruby/rbs sha=fcd48c6b ===
+[2026-04-12T10:55:08Z] [iter=1] PHASE START: enrich repo=ruby/rbs sha=fcd48c6b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fcd48c6b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz
+[2026-04-12T10:55:20Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-12T10:55:45Z] [iter=1] AST store loaded triples=3037342 load_secs=24 mem_mb=865 MB
+[2026-04-12T10:55:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=865 MB
+[2026-04-12T10:55:59Z] [iter=1] LSP targets found call_sites=49384 imports=92 extends=27 implements=0 secs=14
+[2026-04-12T10:56:11Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=865 MB
+[2026-04-12T10:56:27Z] [iter=1] Position index built positions=190919 nodes_with_types=239716 secs=16 mem_mb=865 MB
+[2026-04-12T10:56:27Z] [iter=1] Step 3: Starting LSP resolution mem_mb=865 MB already_completed_types=[] already_completed_files=0
+[2026-04-12T10:56:27Z] [iter=1] Resolving target type target_type=call_site count=49384
+[2026-04-12T10:56:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=test/stdlib/File_test.rb
+[2026-04-12T11:10:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=3 resolved=408 errors=760 current=test/rbs/signature_parsing_test.rb
+[2026-04-12T12:16:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.4 files_done=4 resolved=410 errors=2693 current=test/rbs/ancestor_builder_test.rb
+[2026-04-12T12:28:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.0 files_done=5 resolved=415 errors=3380 current=test/rbs/repository_test.rb
+[2026-04-12T12:28:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=6 resolved=421 errors=3427 current=test/rbs/definition_builder_test.rb
+[2026-04-12T13:58:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.2 files_done=7 resolved=455 errors=5271 current=test/stdlib/uri/generic_test.rb
+[2026-04-12T14:03:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=188.7 files_done=10 resolved=549 errors=5602 current=test/rbs/cli_test.rb
+[2026-04-12T14:15:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=200.2 files_done=11 resolved=652 errors=6152 current=test/rbs/ancestor_graph_test.rb
+[2026-04-12T14:16:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=201.4 files_done=12 resolved=654 errors=6225 current=test/rbs/inline_annotation_parsing_test.rb
+[2026-04-12T14:26:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=211.5 files_done=13 resolved=657 errors=6826 current=test/rbs/writer_test.rb
+[2026-04-12T14:27:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.1 files_done=14 resolved=663 errors=6866 current=test/rbs/test/hook_test.rb
+[2026-04-12T14:28:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=213.5 files_done=15 resolved=674 errors=6947 current=lib/rbs/errors.rb
+[2026-04-12T14:30:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=215.7 files_done=16 resolved=829 errors=7078 current=test/rbs/inline_parser_test.rb
+[2026-04-12T14:51:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.1 files_done=17 resolved=832 errors=8287 current=lib/rbs/collection/config.rb
+[2026-04-12T14:53:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=238.8 files_done=19 resolved=908 errors=8445 current=lib/rbs/collection/config/lockfile_generator.rb
+[2026-04-12T14:55:09Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=20 new_files_this_iter=20 mem_mb=865 MB
+[2026-04-12T14:55:09Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz triples=49985
+[2026-04-12T14:55:10Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-12T14:55:10Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=20
