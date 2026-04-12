@@ -1,0 +1,65 @@
+[2026-04-12T19:06:35Z] === ENRICH ITERATION 3 START | repo=ruby/rbs sha=fcd48c6b ===
+[2026-04-12T19:06:35Z] [iter=3] PHASE START: enrich repo=ruby/rbs sha=fcd48c6b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fcd48c6b-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz
+[2026-04-12T19:06:43Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-12T19:07:10Z] [iter=3] AST store loaded triples=3037342 load_secs=25 mem_mb=870 MB
+[2026-04-12T19:07:10Z] [iter=3] Step 2: Finding LSP targets mem_mb=870 MB
+[2026-04-12T19:07:25Z] [iter=3] LSP targets found call_sites=49384 imports=92 extends=27 implements=0 secs=15
+[2026-04-12T19:07:32Z] [iter=3] Loaded checkpoint partial graph triples=174501
+[2026-04-12T19:07:45Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=870 MB
+[2026-04-12T19:08:01Z] [iter=3] Position index built positions=190919 nodes_with_types=239716 secs=16 mem_mb=998 MB
+[2026-04-12T19:08:01Z] [iter=3] Step 3: Starting LSP resolution mem_mb=998 MB already_completed_types=[] already_completed_files=208
+[2026-04-12T19:08:01Z] [iter=3] Resolving target type target_type=call_site count=49384
+[2026-04-12T19:08:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=0 resolved=0 errors=0 current=test/rbs/ast/type_param_test.rb
+[2026-04-12T19:09:20Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=1 resolved=2 errors=59 current=test/stdlib/resolv/IPv6_test.rb
+[2026-04-12T19:09:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=5 resolved=35 errors=84 current=lib/rbs/collection/sources/stdlib.rb
+[2026-04-12T19:11:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=7 resolved=84 errors=142 current=test/stdlib/Data_test.rb
+[2026-04-12T19:11:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=13 resolved=118 errors=172 current=test/rbs/diff_test.rb
+[2026-04-12T19:12:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=14 resolved=122 errors=216 current=test/stdlib/Thread_Backtrace_test.rb
+[2026-04-12T19:13:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=17 resolved=152 errors=243 current=test/stdlib/Enumerable_test.rb
+[2026-04-12T19:15:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=18 resolved=162 errors=341 current=lib/rbs/substitution.rb
+[2026-04-12T19:15:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=19 resolved=169 errors=366 current=benchmark/memory_new_rails_env.rb
+[2026-04-12T19:16:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=21 resolved=182 errors=413 current=test/stdlib/SystemCallError_test.rb
+[2026-04-12T19:17:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=26 resolved=241 errors=466 current=bin/benchmark-parse.rb
+[2026-04-12T19:18:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=28 resolved=264 errors=498 current=test/stdlib/json/JSONDate_test.rb
+[2026-04-12T19:19:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=30 resolved=283 errors=539 current=test/rbs/collection/sources/stdlib_test.rb
+[2026-04-12T19:19:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.3 files_done=32 resolved=288 errors=565 current=test/stdlib/Comparable_test.rb
+[2026-04-12T19:20:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.8 files_done=35 resolved=317 errors=591 current=lib/rbs/type_name.rb
+[2026-04-12T19:21:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=38 resolved=342 errors=666 current=test/stdlib/json/JSONDateTime_test.rb
+[2026-04-12T19:22:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=16.2 files_done=44 resolved=425 errors=706 current=test/stdlib/ThreadMutex_test.rb
+[2026-04-12T19:24:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=48 resolved=527 errors=768 current=test/rbs/factory_test.rb
+[2026-04-12T19:25:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=54 resolved=592 errors=833 current=test/stdlib/Shellwords_test.rb
+[2026-04-12T19:26:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=58 resolved=628 errors=869 current=lib/rbs/vendorer.rb
+[2026-04-12T19:26:59Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=59 resolved=643 errors=909 current=lib/rbs/unit_test/spy.rb
+[2026-04-12T19:27:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.9 files_done=60 resolved=654 errors=934 current=test/rbs/sorter_test.rb
+[2026-04-12T19:28:18Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=64 resolved=688 errors=973 current=test/stdlib/Warning_test.rb
+[2026-04-12T19:28:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=73 resolved=803 errors=1004 current=test/stdlib/digest/DigestMD5_test.rb
+[2026-04-12T19:29:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.0 files_done=84 resolved=892 errors=1031 current=test/stdlib/ThreadSizedQueue_test.rb
+[2026-04-12T19:30:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=86 resolved=901 errors=1069 current=test/stdlib/Exception_test.rb
+[2026-04-12T19:30:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=95 resolved=956 errors=1093 current=benchmark/memory_new_env.rb
+[2026-04-12T19:31:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=24.8 files_done=104 resolved=1012 errors=1120 current=test/stdlib/json/JSONRange_test.rb
+[2026-04-12T19:31:59Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.4 files_done=113 resolved=1050 errors=1147 current=test/stdlib/uri/http_test.rb
+[2026-04-12T19:32:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=116 resolved=1066 errors=1176 current=lib/rbs/ast/annotation.rb
+[2026-04-12T19:33:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=143 resolved=1160 errors=1200 current=lib/rbs/ast/directives.rb
+[2026-04-12T19:44:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=38.4 files_done=153 resolved=1178 errors=1762 current=src/util/rbs_encoding.c
+[2026-04-12T19:48:41Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=42.1 files_done=154 resolved=1178 errors=1946 current=src/parser.c
+[2026-04-12T19:56:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=50.2 files_done=155 resolved=1194 errors=2345 current=src/ast.c
+[2026-04-12T19:58:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=51.8 files_done=156 resolved=1194 errors=2428 current=ext/rbs_extension/ast_translation.c
+[2026-04-12T20:01:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=157 resolved=1194 errors=2568 current=ext/rbs_extension/main.c
+[2026-04-12T20:02:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=56.1 files_done=159 resolved=1194 errors=2640 current=include/rbs/ast.h
+[2026-04-12T20:04:23Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=57.8 files_done=160 resolved=1194 errors=2722 current=src/util/rbs_unescape.c
+[2026-04-12T20:06:09Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=162 resolved=1202 errors=2809 current=src/util/rbs_constant_pool.c
+[2026-04-12T20:06:41Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=60.1 files_done=167 resolved=1211 errors=2835 current=src/util/rbs_buffer.c
+[2026-04-12T20:07:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=60.6 files_done=172 resolved=1216 errors=2843 current=rust/ruby-rbs-sys/build.rs
+[2026-04-12T20:07:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=61.3 files_done=173 resolved=1352 errors=2869 current=rust/ruby-rbs/src/node/mod.rs
+[2026-04-12T20:10:18Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=63.7 files_done=174 resolved=1487 errors=2986 current=rust/ruby-rbs/build.rs
+[2026-04-12T20:11:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=65.3 files_done=175 resolved=1708 errors=3061 current=rust/ruby-rbs/examples/locations.rs
+[2026-04-12T20:12:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=177 resolved=1727 errors=3089 current=rust/ruby-rbs-sys/src/lib.rs
+[2026-04-12T20:12:31Z] [iter=3] Target type resolved target_type=call_site resolved=1731 errors=3094 secs=3870 mem_mb=1040 MB
+[2026-04-12T20:12:31Z] [iter=3] Resolving target type target_type=import_statement count=92
+[2026-04-12T20:12:51Z] [iter=3] Target type resolved target_type=import_statement resolved=28 errors=0 secs=21 mem_mb=1040 MB
+[2026-04-12T20:12:51Z] [iter=3] Resolving target type target_type=extends_clause count=27
+[2026-04-12T20:12:53Z] [iter=3] Target type resolved target_type=extends_clause resolved=0 errors=0 secs=1 mem_mb=1040 MB
+[2026-04-12T20:13:55Z] [iter=3] Step 5: Writing final enrichment file triples=281176
+[2026-04-12T20:14:01Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz size_kb=6126
+[2026-04-12T20:14:01Z] [iter=3] Checkpoint cleared (enrichment complete)
+[2026-04-12T20:14:01Z] [iter=3] PHASE END: enrich elapsed_s=4046 elapsed_min=67.4 total_triples=281176
