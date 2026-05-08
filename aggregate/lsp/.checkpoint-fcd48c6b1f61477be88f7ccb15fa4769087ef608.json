@@ -1,0 +1,42 @@
+{
+  "commit_sha": "fcd48c6b1f61477be88f7ccb15fa4769087ef608",
+  "completed_files": [
+    "lib/rbs/errors.rb",
+    "lib/rbs/prototype/rb.rb",
+    "test/rbs/ancestor_builder_test.rb",
+    "test/rbs/ancestor_graph_test.rb",
+    "test/rbs/cli_test.rb",
+    "test/rbs/definition_builder_test.rb",
+    "test/rbs/inline_annotation_parsing_test.rb",
+    "test/rbs/repository_test.rb",
+    "test/rbs/signature_parsing_test.rb",
+    "test/rbs/test/hook_test.rb",
+    "test/rbs/type_parsing_test.rb",
+    "test/rbs/writer_test.rb",
+    "test/stdlib/File_test.rb",
+    "test/stdlib/Refinement_test.rb",
+    "test/stdlib/json/JSONBigDecimal_test.rb",
+    "test/stdlib/uri/generic_test.rb"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/ruby/rbs/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz",
+    "call_sites": 49384,
+    "import_statements": 92,
+    "call_targets_resolved": 829,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 7138,
+    "extends_clauses": 27,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 99,
+    "import_symbols_denormalized": 0,
+    "extends_class_denormalized": 0,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14407
+}

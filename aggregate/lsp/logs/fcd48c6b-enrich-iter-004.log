@@ -1,0 +1,28 @@
+[2026-05-08T02:33:31Z] === ENRICH ITERATION 4 START | repo=ruby/rbs sha=fcd48c6b ===
+[2026-05-08T02:33:31Z] [iter=4] PHASE START: enrich repo=ruby/rbs sha=fcd48c6b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fcd48c6b-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz
+[2026-05-08T02:33:43Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-05-08T02:34:10Z] [iter=4] AST store loaded triples=3037342 load_secs=26 mem_mb=865 MB
+[2026-05-08T02:34:10Z] [iter=4] Step 2: Finding LSP targets mem_mb=865 MB
+[2026-05-08T02:34:26Z] [iter=4] LSP targets found call_sites=49384 imports=92 extends=27 implements=0 secs=16
+[2026-05-08T02:34:39Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=865 MB
+[2026-05-08T02:34:58Z] [iter=4] Position index built positions=190919 nodes_with_types=239716 secs=18 mem_mb=865 MB
+[2026-05-08T02:34:58Z] [iter=4] Step 3: Starting LSP resolution mem_mb=865 MB already_completed_types=[] already_completed_files=0
+[2026-05-08T02:34:58Z] [iter=4] Resolving target type target_type=call_site count=49384
+[2026-05-08T02:34:59Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=test/stdlib/File_test.rb
+[2026-05-08T02:35:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=2 resolved=403 errors=13 current=test/rbs/type_parsing_test.rb
+[2026-05-08T02:51:53Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=3 resolved=408 errors=761 current=test/rbs/signature_parsing_test.rb
+[2026-05-08T04:04:06Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=90.6 files_done=4 resolved=410 errors=2694 current=test/rbs/ancestor_builder_test.rb
+[2026-05-08T04:18:19Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=104.8 files_done=5 resolved=415 errors=3381 current=test/rbs/repository_test.rb
+[2026-05-08T04:19:16Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=105.8 files_done=6 resolved=421 errors=3428 current=test/rbs/definition_builder_test.rb
+[2026-05-08T05:53:03Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=199.5 files_done=7 resolved=455 errors=5272 current=test/stdlib/uri/generic_test.rb
+[2026-05-08T05:59:48Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=206.3 files_done=10 resolved=549 errors=5603 current=test/rbs/cli_test.rb
+[2026-05-08T06:13:23Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=219.9 files_done=11 resolved=652 errors=6153 current=test/rbs/ancestor_graph_test.rb
+[2026-05-08T06:14:52Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=221.4 files_done=12 resolved=654 errors=6226 current=test/rbs/inline_annotation_parsing_test.rb
+[2026-05-08T06:27:13Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=233.7 files_done=13 resolved=657 errors=6827 current=test/rbs/writer_test.rb
+[2026-05-08T06:28:03Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=234.5 files_done=14 resolved=663 errors=6867 current=test/rbs/test/hook_test.rb
+[2026-05-08T06:29:42Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=236.2 files_done=15 resolved=674 errors=6948 current=lib/rbs/errors.rb
+[2026-05-08T06:32:23Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=238.9 files_done=16 resolved=829 errors=7079 current=test/rbs/inline_parser_test.rb
+[2026-05-08T06:33:38Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=16 new_files_this_iter=16 mem_mb=865 MB
+[2026-05-08T06:33:38Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fcd48c6b1f61477be88f7ccb15fa4769087ef608.nq.gz triples=41222
+[2026-05-08T06:33:39Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-05-08T06:33:39Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=14407 elapsed_min=240.1 files_completed=16
