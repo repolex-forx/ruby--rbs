@@ -1,0 +1,7 @@
+[2026-05-08T21:24:33Z] === AST ITERATION 1 START | repo=ruby/rbs sha=32a59f63 ===
+[2026-05-08T21:24:33Z] [iter=1] PHASE START: ast repo=ruby/rbs sha=32a59f63
+[2026-05-08T21:24:33Z] [iter=1] Building AST aggregate chunks
+[2026-05-08T21:27:54Z] [iter=1] AST chunks built count=1 triples=2986444
+[2026-05-08T21:27:54Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/32a59f63bc3293a88fecf821d31cb9269ed0875d/.complete
+[2026-05-08T21:27:54Z] [iter=1] PHASE END: ast elapsed_s=200 elapsed_min=3.3
+[2026-05-08T21:27:54Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
