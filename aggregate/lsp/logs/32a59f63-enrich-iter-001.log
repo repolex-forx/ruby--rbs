@@ -1,0 +1,30 @@
+[2026-05-09T04:19:50Z] === ENRICH ITERATION 1 START | repo=ruby/rbs sha=32a59f63 ===
+[2026-05-09T04:19:50Z] [iter=1] PHASE START: enrich repo=ruby/rbs sha=32a59f63 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/32a59f63-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/32a59f63bc3293a88fecf821d31cb9269ed0875d.nq.gz
+[2026-05-09T04:20:05Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-09T04:20:31Z] [iter=1] AST store loaded triples=2986444 load_secs=25 mem_mb=849 MB
+[2026-05-09T04:20:31Z] [iter=1] Step 2: Finding LSP targets mem_mb=849 MB
+[2026-05-09T04:20:47Z] [iter=1] LSP targets found call_sites=48444 imports=91 extends=27 implements=0 secs=16
+[2026-05-09T04:21:00Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=849 MB
+[2026-05-09T04:21:17Z] [iter=1] Position index built positions=187273 nodes_with_types=235496 secs=18 mem_mb=849 MB
+[2026-05-09T04:21:17Z] [iter=1] Step 3: Starting LSP resolution mem_mb=849 MB already_completed_types=[] already_completed_files=0
+[2026-05-09T04:21:17Z] [iter=1] Resolving target type target_type=call_site count=48444
+[2026-05-09T04:21:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=lib/rbs/types.rb
+[2026-05-09T04:26:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=1 resolved=276 errors=243 current=test/rbs/inline_parser_test.rb
+[2026-05-09T04:50:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.3 files_done=2 resolved=279 errors=1405 current=test/rbs/types_test.rb
+[2026-05-09T04:50:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=4 resolved=288 errors=1432 current=test/stdlib/OptionParser_test.rb
+[2026-05-09T05:00:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=6 resolved=474 errors=1919 current=test/rbs/method_builder_test.rb
+[2026-05-09T05:03:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=7 resolved=477 errors=2089 current=test/stdlib/Ractor_test.rb
+[2026-05-09T06:15:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.7 files_done=9 resolved=500 errors=4023 current=test/stdlib/Regexp_test.rb
+[2026-05-09T06:20:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.3 files_done=11 resolved=561 errors=4247 current=bin/benchmark-parse.rb
+[2026-05-09T06:29:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.6 files_done=13 resolved=583 errors=4704 current=test/rbs/test/hook_test.rb
+[2026-05-09T06:31:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.2 files_done=14 resolved=594 errors=4785 current=lib/rbs/unit_test/spy.rb
+[2026-05-09T06:31:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.7 files_done=15 resolved=605 errors=4810 current=lib/rbs/prototype/rbi.rb
+[2026-05-09T06:36:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.5 files_done=16 resolved=737 errors=5046 current=test/stdlib/Encoding_test.rb
+[2026-05-09T06:39:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=18 resolved=938 errors=5189 current=test/rbs/inline_annotation_parsing_test.rb
+[2026-05-09T06:49:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.1 files_done=19 resolved=941 errors=5719 current=test/rbs/parser_test.rb
+[2026-05-09T07:05:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.9 files_done=20 resolved=942 errors=6450 current=test/rbs/ancestor_builder_test.rb
+[2026-05-09T07:19:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=180.0 files_done=21 resolved=947 errors=7137 current=test/stdlib/json/JSONException_test.rb
+[2026-05-09T08:19:52Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=22 new_files_this_iter=22 mem_mb=849 MB
+[2026-05-09T08:19:52Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/32a59f63bc3293a88fecf821d31cb9269ed0875d.nq.gz triples=53896
+[2026-05-09T08:19:53Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-05-09T08:19:53Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.0 files_completed=22
