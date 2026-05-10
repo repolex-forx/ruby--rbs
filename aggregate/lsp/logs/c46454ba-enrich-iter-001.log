@@ -1,0 +1,33 @@
+[2026-05-10T09:47:33Z] === ENRICH ITERATION 1 START | repo=ruby/rbs sha=c46454ba ===
+[2026-05-10T09:47:33Z] [iter=1] PHASE START: enrich repo=ruby/rbs sha=c46454ba runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c46454ba-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c46454bae8fc4ca18ef7cbbb38672ac30ee5d89c.nq.gz
+[2026-05-10T09:47:43Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-10T09:48:07Z] [iter=1] AST store loaded triples=2798799 load_secs=23 mem_mb=846 MB
+[2026-05-10T09:48:07Z] [iter=1] Step 2: Finding LSP targets mem_mb=846 MB
+[2026-05-10T09:48:22Z] [iter=1] LSP targets found call_sites=45880 imports=81 extends=27 implements=0 secs=15
+[2026-05-10T09:48:35Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=846 MB
+[2026-05-10T09:48:51Z] [iter=1] Position index built positions=174957 nodes_with_types=220269 secs=16 mem_mb=846 MB
+[2026-05-10T09:48:51Z] [iter=1] Step 3: Starting LSP resolution mem_mb=846 MB already_completed_types=[] already_completed_files=0
+[2026-05-10T09:48:51Z] [iter=1] Resolving target type target_type=call_site count=45880
+[2026-05-10T09:48:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=lib/rbs/prototype/runtime/value_object_generator.rb
+[2026-05-10T09:50:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=1 resolved=7 errors=81 current=test/validator_test.rb
+[2026-05-10T09:53:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=2 resolved=15 errors=229 current=test/rbs/signature_parsing_test.rb
+[2026-05-10T11:02:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.2 files_done=3 resolved=17 errors=2162 current=test/rbs/annotate/annotations_test.rb
+[2026-05-10T11:03:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.8 files_done=4 resolved=18 errors=2196 current=test/rbs/environment_loader_test.rb
+[2026-05-10T11:06:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.6 files_done=5 resolved=28 errors=2343 current=test/stdlib/OpenSSL_test.rb
+[2026-05-10T11:06:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.2 files_done=6 resolved=150 errors=2367 current=test/stdlib/TracePoint_test.rb
+[2026-05-10T11:07:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.7 files_done=7 resolved=168 errors=2396 current=test/stdlib/Timeout_test.rb
+[2026-05-10T11:09:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.3 files_done=9 resolved=236 errors=2527 current=test/stdlib/IO_test.rb
+[2026-05-10T11:25:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.5 files_done=11 resolved=358 errors=3269 current=lib/rbs/annotate/rdoc_annotator.rb
+[2026-05-10T11:27:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.1 files_done=12 resolved=424 errors=3406 current=test/stdlib/global_variables_test.rb
+[2026-05-10T11:29:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=13 resolved=435 errors=3489 current=test/rbs/resolver/constant_resolver_test.rb
+[2026-05-10T11:33:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.0 files_done=14 resolved=438 errors=3716 current=test/stdlib/Time_test.rb
+[2026-05-10T11:36:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.6 files_done=16 resolved=745 errors=3850 current=test/stdlib/json/JSONRange_test.rb
+[2026-05-10T11:36:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.2 files_done=20 resolved=826 errors=3875 current=test/rbs/definition_builder_test.rb
+[2026-05-10T13:05:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=198.2 files_done=21 resolved=858 errors=5695 current=test/stdlib/Monitor_test.rb
+[2026-05-10T13:28:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=221.1 files_done=23 resolved=875 errors=6874 current=test/stdlib/IPAddr_test.rb
+[2026-05-10T13:30:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=223.1 files_done=25 resolved=938 errors=6980 current=test/rbs/environment_test.rb
+[2026-05-10T13:39:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.5 files_done=26 resolved=944 errors=7420 current=test/rbs/inline_annotation_parsing_test.rb
+[2026-05-10T13:47:34Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=26 new_files_this_iter=26 mem_mb=846 MB
+[2026-05-10T13:47:34Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/c46454bae8fc4ca18ef7cbbb38672ac30ee5d89c.nq.gz triples=53759
+[2026-05-10T13:47:35Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-05-10T13:47:35Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=26
