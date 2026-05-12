@@ -1,0 +1,111 @@
+[2026-05-12T01:16:03Z] === ENRICH ITERATION 1 START | repo=ruby/rbs sha=e7982676 ===
+[2026-05-12T01:16:03Z] [iter=1] PHASE START: enrich repo=ruby/rbs sha=e7982676 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/e7982676-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/e7982676710c3c57527402a6d36b7b344f8caa74.nq.gz
+[2026-05-12T01:16:18Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-12T01:16:29Z] [iter=1] AST store loaded triples=1557655 load_secs=11 mem_mb=829 MB
+[2026-05-12T01:16:29Z] [iter=1] Step 2: Finding LSP targets mem_mb=829 MB
+[2026-05-12T01:16:38Z] [iter=1] LSP targets found call_sites=23603 imports=35 extends=17 implements=0 secs=8
+[2026-05-12T01:16:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=829 MB
+[2026-05-12T01:16:54Z] [iter=1] Position index built positions=94755 nodes_with_types=117395 secs=9 mem_mb=829 MB
+[2026-05-12T01:16:54Z] [iter=1] Step 3: Starting LSP resolution mem_mb=829 MB already_completed_types=[] already_completed_files=0
+[2026-05-12T01:16:54Z] [iter=1] Resolving target type target_type=call_site count=23603
+[2026-05-12T01:16:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=src/lexer.c
+[2026-05-12T01:22:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=1 resolved=0 errors=548 current=src/util/rbs_encoding.c
+[2026-05-12T01:24:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=2 resolved=0 errors=732 current=src/util/rbs_allocator.c
+[2026-05-12T01:26:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=10 resolved=86 errors=885 current=lib/rbs/ast/members.rb
+[2026-05-12T01:27:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=14 resolved=308 errors=941 current=test/rbs/repository_test.rb
+[2026-05-12T01:30:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=16 resolved=452 errors=1230 current=test/stdlib/FileTest_test.rb
+[2026-05-12T01:30:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=19 resolved=513 errors=1296 current=test/rbs/environment_walker_test.rb
+[2026-05-12T01:31:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.4 files_done=20 resolved=515 errors=1347 current=test/rbs/annotate/rdoc_source_test.rb
+[2026-05-12T01:33:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=21 resolved=517 errors=1497 current=test/stdlib/BasicObject_test.rb
+[2026-05-12T01:34:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=25 resolved=541 errors=1605 current=lib/rbs/ast/visitor.rb
+[2026-05-12T01:35:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=27 resolved=572 errors=1757 current=test/rbs/resolver/type_name_resolver_test.rb
+[2026-05-12T01:36:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=28 resolved=575 errors=1812 current=test/stdlib/Net_HTTP_test.rb
+[2026-05-12T01:38:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.2 files_done=29 resolved=595 errors=1974 current=test/rbs/ancestor_builder_test.rb
+[2026-05-12T01:45:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.8 files_done=30 resolved=600 errors=2661 current=test/rbs/environment_test.rb
+[2026-05-12T01:50:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=31 resolved=606 errors=3101 current=test/stdlib/Integer_test.rb
+[2026-05-12T01:55:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.9 files_done=35 resolved=803 errors=3594 current=test/stdlib/Range_test.rb
+[2026-05-12T01:57:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.1 files_done=37 resolved=833 errors=3709 current=test/stdlib/Math_test.rb
+[2026-05-12T01:58:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.2 files_done=39 resolved=838 errors=3803 current=lib/rbs/cli.rb
+[2026-05-12T02:02:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.8 files_done=40 resolved=1004 errors=4179 current=lib/rbs/collection/sources/git.rb
+[2026-05-12T02:03:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.3 files_done=41 resolved=1086 errors=4225 current=lib/rbs/resolver/constant_resolver.rb
+[2026-05-12T02:04:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.0 files_done=42 resolved=1131 errors=4287 current=lib/rbs/annotate/rdoc_annotator.rb
+[2026-05-12T02:05:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.5 files_done=43 resolved=1197 errors=4424 current=lib/rbs/method_type.rb
+[2026-05-12T02:06:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=45 resolved=1229 errors=4471 current=test/rbs/buffer_test.rb
+[2026-05-12T02:06:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.8 files_done=46 resolved=1230 errors=4549 current=lib/rbs/collection/config.rb
+[2026-05-12T02:07:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.4 files_done=52 resolved=1431 errors=4601 current=test/stdlib/TSort_test.rb
+[2026-05-12T02:08:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.3 files_done=54 resolved=1439 errors=4685 current=test/stdlib/resolv/DNS_test.rb
+[2026-05-12T02:08:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=57 resolved=1676 errors=4730 current=lib/rbs/test.rb
+[2026-05-12T02:10:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=59 resolved=1708 errors=4855 current=lib/rbs/definition_builder/ancestor_builder.rb
+[2026-05-12T02:13:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.0 files_done=60 resolved=1850 errors=5112 current=test/rbs/diff_test.rb
+[2026-05-12T02:13:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.8 files_done=62 resolved=1875 errors=5190 current=test/stdlib/URI_test.rb
+[2026-05-12T02:15:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.3 files_done=65 resolved=1914 errors=5330 current=test/stdlib/Dir_test.rb
+[2026-05-12T02:15:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.8 files_done=69 resolved=1991 errors=5379 current=test/stdlib/Regexp_test.rb
+[2026-05-12T02:16:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.5 files_done=71 resolved=2011 errors=5440 current=lib/rbs/test/tester.rb
+[2026-05-12T02:17:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.0 files_done=72 resolved=2040 errors=5493 current=lib/rbs/locator.rb
+[2026-05-12T02:17:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.8 files_done=73 resolved=2083 errors=5561 current=test/rbs/vendorer_test.rb
+[2026-05-12T02:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.7 files_done=75 resolved=2090 errors=5740 current=lib/rbs/sorter.rb
+[2026-05-12T02:20:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.9 files_done=76 resolved=2098 errors=5852 current=test/stdlib/json/JSONBigDecimal_test.rb
+[2026-05-12T02:21:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.5 files_done=78 resolved=2127 errors=5917 current=lib/rdoc_plugin/parser.rb
+[2026-05-12T02:22:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=79 resolved=2160 errors=6027 current=test/stdlib/Random_Formatter_test.rb
+[2026-05-12T02:23:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.5 files_done=81 resolved=2183 errors=6099 current=bin/run_in_md.rb
+[2026-05-12T02:26:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.1 files_done=83 resolved=2206 errors=6339 current=lib/rbs/substitution.rb
+[2026-05-12T02:26:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.6 files_done=86 resolved=2236 errors=6387 current=lib/rbs/unit_test/spy.rb
+[2026-05-12T02:28:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.0 files_done=88 resolved=2282 errors=6516 current=bin/test_runner.rb
+[2026-05-12T02:29:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.1 files_done=90 resolved=2298 errors=6620 current=lib/rbs/test/setup.rb
+[2026-05-12T02:30:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.2 files_done=92 resolved=2341 errors=6719 current=test/stdlib/ERB_test.rb
+[2026-05-12T02:31:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.6 files_done=95 resolved=2496 errors=6847 current=lib/rbs/unit_test/with_aliases.rb
+[2026-05-12T02:32:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.5 files_done=98 resolved=2597 errors=6934 current=test/stdlib/rubygems/Gem_test.rb
+[2026-05-12T02:35:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.1 files_done=103 resolved=2708 errors=7162 current=lib/rbs/ast/declarations.rb
+[2026-05-12T02:35:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.6 files_done=105 resolved=2802 errors=7210 current=test/stdlib/Exception_test.rb
+[2026-05-12T02:36:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.2 files_done=109 resolved=2872 errors=7263 current=test/stdlib/IO_test.rb
+[2026-05-12T02:37:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.1 files_done=112 resolved=3041 errors=7351 current=test/rbs/rdoc/rbs_parser_test.rb
+[2026-05-12T02:39:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.2 files_done=113 resolved=3043 errors=7541 current=test/stdlib/Encoding_test.rb
+[2026-05-12T02:39:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.7 files_done=120 resolved=3205 errors=7583 current=test/stdlib/json/JSONSet_test.rb
+[2026-05-12T02:40:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.9 files_done=122 resolved=3249 errors=7702 current=test/stdlib/Ractor_test.rb
+[2026-05-12T02:42:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=125 resolved=3321 errors=7813 current=test/stdlib/json/JSONStruct_test.rb
+[2026-05-12T02:42:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.6 files_done=128 resolved=3343 errors=7859 current=test/stdlib/global_variables_test.rb
+[2026-05-12T02:43:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.5 files_done=129 resolved=3354 errors=7942 current=test/rbs/test/runtime_test_test.rb
+[2026-05-12T02:44:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.0 files_done=131 resolved=3386 errors=7993 current=lib/rbs/file_finder.rb
+[2026-05-12T02:44:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=135 resolved=3510 errors=8077 current=test/rbs/test/tester_test.rb
+[2026-05-12T02:45:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.9 files_done=138 resolved=3565 errors=8168 current=lib/rbs/prototype/runtime/helpers.rb
+[2026-05-12T02:46:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=141 resolved=3574 errors=8218 current=lib/rbs/definition_builder/method_builder.rb
+[2026-05-12T02:47:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.7 files_done=142 resolved=3589 errors=8339 current=test/stdlib/resolv/IPv6_test.rb
+[2026-05-12T02:48:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.9 files_done=144 resolved=3645 errors=8449 current=test/rbs/test/setup_helper_test.rb
+[2026-05-12T02:49:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.6 files_done=147 resolved=3694 errors=8518 current=test/stdlib/GC_test.rb
+[2026-05-12T02:51:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.2 files_done=149 resolved=3726 errors=8665 current=test/stdlib/resolv/Hosts_test.rb
+[2026-05-12T02:51:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=153 resolved=3789 errors=8716 current=test/rbs/test/hook_test.rb
+[2026-05-12T02:52:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.6 files_done=154 resolved=3800 errors=8797 current=lib/rbs/cli/diff.rb
+[2026-05-12T02:54:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.1 files_done=157 resolved=3813 errors=8944 current=lib/rbs/prototype/node_usage.rb
+[2026-05-12T02:55:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.0 files_done=161 resolved=3899 errors=9027 current=test/rbs/ancestor_graph_test.rb
+[2026-05-12T02:55:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.8 files_done=162 resolved=3901 errors=9100 current=test/stdlib/Enumerable_test.rb
+[2026-05-12T02:56:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.8 files_done=163 resolved=3911 errors=9198 current=lib/rbs/resolver/type_name_resolver.rb
+[2026-05-12T02:57:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.6 files_done=164 resolved=3926 errors=9273 current=lib/rbs/builtin_names.rb
+[2026-05-12T02:58:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.3 files_done=167 resolved=3959 errors=9339 current=test/rbs/ast/ruby/declarations_test.rb
+[2026-05-12T02:59:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.7 files_done=168 resolved=3965 errors=9468 current=lib/rbs/environment_loader.rb
+[2026-05-12T03:01:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.8 files_done=171 resolved=4100 errors=9663 current=test/rbs/errors_test.rb
+[2026-05-12T03:02:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.3 files_done=173 resolved=4114 errors=9716 current=lib/rbs/vendorer.rb
+[2026-05-12T03:02:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.9 files_done=175 resolved=4134 errors=9766 current=test/rbs/schema_test.rb
+[2026-05-12T03:03:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.6 files_done=176 resolved=4137 errors=9833 current=test/rbs/inline_type_fingerprint_test.rb
+[2026-05-12T03:04:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.4 files_done=178 resolved=4146 errors=9909 current=test/stdlib/Rational_test.rb
+[2026-05-12T03:04:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.9 files_done=180 resolved=4172 errors=9958 current=test/stdlib/rubygems/GemRequirement_test.rb
+[2026-05-12T03:05:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.4 files_done=193 resolved=4327 errors=10005 current=test/json_validator.rb
+[2026-05-12T03:06:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.0 files_done=196 resolved=4367 errors=10059 current=test/stdlib/Forwardable_test.rb
+[2026-05-12T03:06:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.6 files_done=203 resolved=4419 errors=10111 current=test/stdlib/PP_test.rb
+[2026-05-12T03:07:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.1 files_done=212 resolved=4525 errors=10162 current=test/stdlib/Float_test.rb
+[2026-05-12T03:07:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.7 files_done=215 resolved=4549 errors=10213 current=test/stdlib/Monitor_test.rb
+[2026-05-12T03:08:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.3 files_done=222 resolved=4596 errors=10264 current=test/stdlib/digest/Digest_test.rb
+[2026-05-12T03:08:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.8 files_done=234 resolved=4700 errors=10314 current=test/stdlib/json/JSONRegexp_test.rb
+[2026-05-12T03:09:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.4 files_done=245 resolved=4766 errors=10367 current=test/stdlib/FalseClass_test.rb
+[2026-05-12T03:10:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.0 files_done=253 resolved=4804 errors=10420 current=test/typecheck/untyped-blocks/instance_exec.rb
+[2026-05-12T03:10:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.5 files_done=256 resolved=4816 errors=10467 current=test/rbs/node_usage_test.rb
+[2026-05-12T03:11:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.0 files_done=275 resolved=4930 errors=10511 current=test/assets/test-gem/amber.gemspec
+[2026-05-12T03:11:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.6 files_done=290 resolved=5018 errors=10567 current=lib/rbs/annotate.rb
+[2026-05-12T03:12:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.1 files_done=320 resolved=5105 errors=10610 current=test/typecheck/symbol_match/match.rb
+[2026-05-12T03:12:12Z] [iter=1] Target type resolved target_type=call_site resolved=5105 errors=10610 secs=6919 mem_mb=829 MB
+[2026-05-12T03:12:12Z] [iter=1] Resolving target type target_type=import_statement count=35
+[2026-05-12T03:12:15Z] [iter=1] Target type resolved target_type=import_statement resolved=5 errors=0 secs=2 mem_mb=829 MB
+[2026-05-12T03:12:15Z] [iter=1] Resolving target type target_type=extends_clause count=17
+[2026-05-12T03:12:20Z] [iter=1] Target type resolved target_type=extends_clause resolved=17 errors=0 secs=5 mem_mb=829 MB
+[2026-05-12T03:12:53Z] [iter=1] Step 5: Writing final enrichment file triples=156995
+[2026-05-12T03:12:57Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/e7982676710c3c57527402a6d36b7b344f8caa74.nq.gz size_kb=3308
+[2026-05-12T03:12:57Z] [iter=1] PHASE END: enrich elapsed_s=7014 elapsed_min=116.9 total_triples=156995
